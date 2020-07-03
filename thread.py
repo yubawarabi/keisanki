@@ -22,6 +22,7 @@ def my_function3():
       print("GHI")
 
 if __name__ == "__main__":
+  lock=RLock()
   t1 = Thread(target = my_function1)
   t2 = Thread(target = my_function2)
   t3 = Thread(target = my_function3)
